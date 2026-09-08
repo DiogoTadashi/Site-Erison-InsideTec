@@ -145,13 +145,35 @@ section {
     text-align: center;
 }
 
-section.inicio {
+section.hero {
     background-color: var(--cor1);
-    color:wheat
+    color:white
 }
 
-.inicio h2{
+.hero h2{
     padding-bottom: 10px;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 99px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1DA851;
+}
+
+.btn-whatsapp img {
+  height: 22px;
+  width: 22px;
 }
 
 section.funcionalidades {
@@ -257,12 +279,13 @@ section.diferencial {
 }
 
 section.sobre-nos {
-    background-color: var(--cor1);
-    color: white;
+    background-color: var(--cor4);
+    color: var(--cor3);
 }
 
 .sobre-nos h2{
     padding-bottom: 20px;
+    font-family: var(--fonte-marca);
 }
 
 .sobre-nos p {
@@ -274,7 +297,7 @@ section.sobre-nos {
 }
 
 footer {
-    background-color: var(--cor0);
+    background-color: var(--cor3);
     color: white;
     padding: 5px;
     text-align: center;
@@ -308,6 +331,7 @@ footer {
     color: inherit;
 }
 
+
 .localizacao {
     display: flex;
     align-items: flex-start;
@@ -330,6 +354,7 @@ footer {
     max-width: 250px;
     display: flex;
     flex-shrink: 0;
+    color: inherit;
 }
 
 .footer-copy {

@@ -10,21 +10,18 @@
 @font-face {
     font-family: 'Aroma';
     src: url('fonts/AROMA-Bold.ttf') format('truetype');
-    font-weight: 700; /* Peso negrito para títulos */
+    font-weight: 700;
     font-style: normal;
 }
 
 :root {
-    /* Cores Institucionais e de Destaque */
-    --cor0: #1C69AC; /* Azul Principal / Títulos menores e Navegação */
-    --cor1: #96bddd; /* Azul Claro / Suporte e fundos de cards */
-    --cor2: #0072C9; /* Azul Vibrante / Chamadas de Ação (CTAs) e Botões */
+    --cor0: #1C69AC;
+    --cor1: #96bddd;
+    --cor2: #0072C9;
     
-    /* Neutros (Garantem excelente contraste e leitura) */
-    --cor3: #2D3748; /* Cinza Escuro / Texto corrido e parágrafos */
-    --cor4: #F0F4F8; /* Azul/Cinza Claro / Fundo principal do site ou dashboard */
+    --cor3: #2D3748;
+    --cor4: #F0F4F8;
 
-    /* Tipografia */
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-marca: "Aroma", sans-serif;
 }
@@ -53,8 +50,7 @@ header {
     z-index: 1000;
 }
 
-
-header > .logo {
+header .logo {
     height: auto; 
     max-height: 90px; 
     width: auto; 

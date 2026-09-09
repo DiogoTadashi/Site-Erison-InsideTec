@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'Aroma';
     src: url('fonts/AROMA-Light.ttf') format('truetype');
-    font-weight: 400; /* Peso normal para parágrafos */
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -63,6 +63,11 @@ header > h1 {
     width: 100%;
     margin: 0;
     color: rgb(0, 0, 0);
+}
+
+header a {
+    display: flex;
+    line-height: 0;
 }
 
 body {
@@ -272,6 +277,11 @@ section.diferencial {
     font-size: 1.6rem;
     min-width: 40px;
   }
+}
+
+.servicos h2{
+    padding-bottom: 20px;
+    font-family: var(--fonte-marca);
 }
 
 section.sobre-nos {

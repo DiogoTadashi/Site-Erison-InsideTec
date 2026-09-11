@@ -18,3 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elementosAnimados.forEach(elemento => observerAnimacao.observe(elemento));
 });
+
+const menuToggle = document.getElementById('menuToggle');
+const menuPrincipal = document.getElementById('menuPrincipal');
+
+menuToggle.addEventListener('click', () => {
+    menuPrincipal.classList.toggle('aberto');
+    const expandido = menuPrincipal.classList.contains('aberto');
+    menuToggle.setAttribute('aria-expanded', expandido);
+});

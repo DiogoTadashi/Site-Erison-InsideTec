@@ -19,11 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
     elementosAnimados.forEach(elemento => observerAnimacao.observe(elemento));
 });
 
+function ajustarPaddingHeader() {
+    const header = document.querySelector('header');
+    const altura = header.offsetHeight;
+    document.body.style.paddingTop = altura + 'px';
+}
+
+window.addEventListener('load', ajustarPaddingHeader);
+
+window.addEventListener('resize', ajustarPaddingHeader);
+
 const menuToggle = document.getElementById('menuToggle');
 const menuPrincipal = document.getElementById('menuPrincipal');
 
 menuToggle.addEventListener('click', () => {
     menuPrincipal.classList.toggle('aberto');
-    const expandido = menuPrincipal.classList.contains('aberto');
-    menuToggle.setAttribute('aria-expanded', expandido);
+    const aberto = menuPrincipal.classList.contains('aberto');
+    menuToggle.setAttribute('aria-expanded', aberto);
+
+    ajustarPaddingHeader();
 });

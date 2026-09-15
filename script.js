@@ -1,23 +1,18 @@
+const elementosAnimados = document.querySelectorAll('.animacao-escondida');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const elementosAnimados = document.querySelectorAll('.animacao-escondida');
-
-    const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('aparecer');
-                observer.unobserve(entry.target);
-            }
-        });
-    };
-
-    const observerAnimacao = new IntersectionObserver(observerCallback, {
-        root: null,
-        threshold: 0.1
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('aparecer');
+        } else {
+            entry.target.classList.remove('aparecer');
+        }
     });
-
-    elementosAnimados.forEach(elemento => observerAnimacao.observe(elemento));
+}, {
+    threshold: 0.15
 });
+
+elementosAnimados.forEach(el => observer.observe(el));
 
 function ajustarPaddingHeader() {
     const header = document.querySelector('header');

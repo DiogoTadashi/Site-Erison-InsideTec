@@ -316,6 +316,9 @@ section.diferencial {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03));
+    border-radius: 12px;
+    padding: 20px 24px;
 }
 
 .diferencial-item .numero {
@@ -449,7 +452,7 @@ footer {
 
 .animacao-escondida {
     opacity: 0;
-    transition: opacity 0.1s;
+    transition: opacity 0.3s ease;
 }
 
 .animacao-escondida.aparecer {
@@ -522,6 +525,7 @@ footer {
     /* Cards */
     .cards-container {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .card {

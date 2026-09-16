@@ -4,12 +4,12 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('aparecer');
-        } else {
-            entry.target.classList.remove('aparecer');
+            observer.unobserve(entry.target);
         }
     });
 }, {
-    threshold: 0.15
+    threshold: 0.05,
+    rootMargin: '0px 0px 100px 0px'
 });
 
 elementosAnimados.forEach(el => observer.observe(el));

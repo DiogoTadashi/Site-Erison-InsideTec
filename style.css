@@ -203,6 +203,23 @@ section.funcionalidades {
     font-size: 1.8rem;
 }
 
+/* ===== Tecnologias (pics.html) ===== */
+section.tecnologia {
+    background-color: #ffffff;
+    color: var(--cor3);
+}
+
+.tecnologia h2 {
+    font-family: var(--fonte-marca);
+    color: var(--cor0);
+    padding-bottom: 60px;
+    font-size: 1.8rem;
+}
+
+.tecnologia .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* ===== CARDS (genérico) ===== */
 .cards-container {
     display: grid;
@@ -255,6 +272,7 @@ section.funcionalidades {
 .card:nth-child(3) { transition-delay: 2s; }
 .card:nth-child(4) { transition-delay: 3s; }
 .card:nth-child(5) { transition-delay: 4s; }
+.card:nth-child(6) { transition-delay: 5s; }
 
 /* ===== TRABALHOS (index.html) ===== */
 .trabalhos h2 {
@@ -383,6 +401,72 @@ section.sobre-nos {
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+/* ===== CONTATO ===== */
+section.contato {
+    background-color: var(--cor4);
+    color: var(--cor3);
+}
+
+.contato h2 {
+    font-family: var(--fonte-marca);
+    padding-bottom: 10px;
+}
+
+.contato > p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--cor3);
+}
+
+.form-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: var(--cor3);
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    outline: none;
+    border-color: var(--cor2);
+    box-shadow: 0 0 0 3px rgba(0, 114, 201, 0.15);
+}
+
+.form-contato textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    align-self: center;
+    background-color: var(--cor2);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 99px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor0);
 }
 
 /* ===== FOOTER ===== */
@@ -552,6 +636,12 @@ footer {
     .diferencial-item .numero {
         font-size: 1.6rem;
         min-width: 40px;
+    }
+
+    /* Contato email */
+    .btn-enviar {
+    align-self: stretch;
+    text-align: center;
     }
 
     /*Footer*/

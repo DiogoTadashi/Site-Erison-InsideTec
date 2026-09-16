@@ -628,6 +628,11 @@ footer {
         max-width: 340px;
     }
 
+    /* Tecnologia */
+    .tecnologia .cards-container {
+    grid-template-columns: 1fr;
+    }
+
     /* Diferencial */
     .diferencial-item {
         gap: 14px;
@@ -661,6 +666,12 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+
+    /* Anim */
+    .animacao-escondida {
+    opacity: 1;
     }
 }
 

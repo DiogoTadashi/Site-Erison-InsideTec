@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://insidetec.com.br/sitemap.xml

@@ -611,10 +611,10 @@ footer {
     }
 
     nav.social ul {
-        gap: 20px;
+        gap: 12px;
     }
     nav.social img {
-        height: 32px;
+        height: 28px;
     }
 
     /* Cards */
